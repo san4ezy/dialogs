@@ -1,0 +1,57 @@
+### Auth
+
+POST {{host}}/auth/signup/
+Accept: application/json
+
+{
+"phone_number": "+380987000005",
+"password": "qwerty"
+}
+
+###
+
+POST {{host}}/auth/signin/
+Accept: application/json
+
+{
+"phone_number": "+380987000005",
+"password": "qwerty"
+}
+
+### Dialogs
+
+GET {{host}}/dialogs/
+Accept: application/json
+Authorization: Bearer {{access}}
+
+###
+
+POST {{host}}/dialogs/
+Accept: application/json
+Authorization: Bearer {{access}}
+
+{
+"user_id": 3
+}
+
+###
+
+PATCH {{host}}/dialogs/6/add_to_favorite/
+Accept: application/json
+Authorization: Bearer {{access}}
+
+###
+
+GET {{host}}/dialogs/6/messages/
+Accept: application/json
+Authorization: Bearer {{access}}
+
+###
+
+POST {{host}}/dialogs/6/messages/
+Accept: application/json
+Authorization: Bearer {{access}}
+
+{
+"text": "Hello again!"
+}

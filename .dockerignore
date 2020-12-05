@@ -1,0 +1,15 @@
+.git
+.ipynb_checkpoints/*
+/notebooks/*
+/unused/*
+.DS_Store
+env.*
+.env
+/devops/*
+
+# To prevent storing dev/temporary container data
+*.csv
+/tmp/*
+
+# To prevent storing postgres data
+/postgres/*
