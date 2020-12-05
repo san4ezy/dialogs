@@ -16,6 +16,7 @@ RUN mkdir $PROJECT_DIR
 WORKDIR $PROJECT_DIR
 
 COPY requirements.txt /app/
+RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
 ENV PYTHONUNBUFFERED 1

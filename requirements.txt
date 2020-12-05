@@ -18,7 +18,6 @@ kombu==4.6.4
 Pillow==8.0.1
 django-polymorphic==2.1.2
 djangorestframework-gis==0.14
-djangorestframework-filters==0.11.1
 gunicorn==19.9.0
 jupyter
 ipython[notebook]==7.19.0
